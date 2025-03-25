@@ -56,14 +56,17 @@ Here `a` and `b` being integers. `x` is the original text alphabet's number/sequ
 Applying this, In the word CHEDDAR , A(1) became O(15). Let, a = 2,
 #
 `(2\*1 + b)%26 = 15`
+#
 The smallest value of `b` would be `39`. Checking if our formula is correct. We'll try to find the cipher of B and check it with what we have
 #
 `(2\*2 + 39)%26 = 17(Q)`
+#
 But `B` is `H`, not `Q`. Here, `(Q(17) + 17)%26` would give H(8).
 #
 Checking for `C`,
 #
 `(2\*3 + 39)%26 = 19(S)`
+#
 But `C` is `A`, not `S`. Here, `(S(19) + 2*17)%26 = A(1)`
 
 SO, there seems to be a correction in our formula. The correct one would be,
